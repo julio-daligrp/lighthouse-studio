@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Montserrat', sans-serif;
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'LEMON MILK', 'Lemon Milk Bold', 'Lemon Milk', sans-serif;
+  --font-supporting: 'Des Montilees Regular', 'Des Montilees', 'Des Montilles', 'Caveat', cursive;
+  --font-script: 'Des Montilees Regular', 'Des Montilees', 'Des Montilles', 'Caveat', cursive;
+
+  --color-lh-wine: #761113;
+  --color-lh-red: #C42A27;
+  --color-lh-cream: #F8F4EB;
+  --color-lh-teal: #14343A;
+  --color-lh-blue: #8FA9BD;
+  --color-lh-yellow: #F8E6AF;
+}
+
+/* Brand Typeface Definitions */
+@font-face {
+  font-family: 'Des Montilees';
+  src: local('Des Montilees Regular'), local('Des Montilees'), local('Des Montilles Regular'), local('Des Montilles');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Des Montilees Regular';
+  src: local('Des Montilees Regular'), local('Des Montilees'), local('Des Montilles Regular'), local('Des Montilles');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #F8F4EB;
+  color: #14343A;
+}
+
+/* Primary Font (Default & Headers/Titles) */
+.font-primary {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Secondary Font (Subheadings - LEMON MILK BOLD) */
+.font-secondary {
+  font-family: 'LEMON MILK', 'Lemon Milk Bold', 'Lemon Milk', sans-serif;
+  letter-spacing: 0.06em;
+}
+
+/* Supporting Font (Casual signature script - Des Montilees Regular) */
+.font-supporting,
+.font-script {
+  font-family: 'Des Montilees Regular', 'Des Montilees', 'Des Montilles', cursive;
+}
+
+::selection {
+  background-color: rgba(196, 42, 39, 0.15);
+  color: #761113;
+}
+
+/* Lighthouse bespoke gradient visual filters */
+.hero-lighthouse-dome {
+  background: radial-gradient(circle at 50% 65%, #ffffff 0%, #F8F4EB 35%, #F8E6AF 65%, #8FA9BD 100%);
+}
+
