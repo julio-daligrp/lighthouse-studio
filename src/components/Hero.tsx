@@ -92,7 +92,7 @@ export const Hero: React.FC<HeroProps> = ({
               <span className="block text-[#14343A]">Tu Agencia</span>
               <span className="block text-[#14343A]">Creativa & Partner</span>
               <span className="inline-flex items-center text-[#C42A27] tracking-tight">
-                <span>Estrategia Digital</span>
+                <span style={{ fontFamily: "'Caveat', cursive" }}>Estrategia Digital</span>
                 <span
                   className="inline-block w-[3.5px] h-[0.8em] bg-[#14343A] ml-2 animate-pulse align-middle"
                   aria-hidden="true"
