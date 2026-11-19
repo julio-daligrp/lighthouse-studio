@@ -21,13 +21,17 @@ View your app in AI Studio: https://ai.studio/apps/8985666e-73cd-4ded-b1be-e8a8d
 
 ## Deploy to GitHub Pages
 
+Live site: https://julio-daligrp.github.io/lighthouse-studio/
+
 The site is a static Vite build and uses hash-based routes (for example
-`/#/servicios`), so it works from any repository subpath without server rewrites.
+`/#/servicios`), so it works from the `/lighthouse-studio/` subpath without
+server rewrites. GitHub Pages serves the contents of the `gh-pages` branch
+(**Settings → Pages → Source: Deploy from a branch → gh-pages / root**).
 
-1. Create a GitHub repository and push this folder to it (`main` or `master`).
-2. In the repo, go to **Settings → Pages → Build and deployment**.
-3. Set **Source** to **GitHub Actions**.
-4. Push again (or run the `Deploy to GitHub Pages` workflow manually). The
-   workflow in `.github/workflows/deploy.yml` builds `dist/` and deploys it.
+To publish changes:
 
-The site will be available at `https://<username>.github.io/<repo-name>/`.
+1. `npm run build`
+2. Copy the contents of `dist/` into a checkout of the `gh-pages` branch,
+   replacing the previous files.
+3. Commit and push that branch:
+   `git add -A && git commit -m "Update site" && git push origin gh-pages`
